@@ -7,6 +7,8 @@
 
 A tiny library for parsing JSON podspecs.
 
+This only exposes a very small subset of podspec properties at the moment (name, version, etc.), but could theoretically be expanded to include everything in the [specification](http://guides.cocoapods.org/syntax/podspec.html).
+
 ## Usage
 
 ```objc
@@ -29,7 +31,7 @@ Spectacles is available through [CocoaPods](http://cocoapods.org). To install it
 
 ## Contributing
 
-Please see [CONTRIBUTING.md](https://github.com/tumblr/XExtensionItem/blob/master/CONTRIBUTING.md) for information on how to help out.
+Please see [CONTRIBUTING.md](https://github.com/tumblr/Spectacles/blob/master/CONTRIBUTING.md) for information on how to help out.
 
 ## Contact
 
