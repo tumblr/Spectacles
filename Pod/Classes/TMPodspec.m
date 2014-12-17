@@ -5,7 +5,7 @@ static NSString * const PodspecKeyVersion = @"version";
 static NSString * const PodspecKeySummary = @"summary";
 static NSString * const PodspecKeyHomepageURL = @"homepage";
 
-@interface TMPodspec()
+@interface TMPodspec ()
 
 @property (nonatomic) NSDictionary *dictionary;
 
