@@ -28,11 +28,11 @@
 @property (nonatomic, readonly) NSURL *homepageURL;
 
 /**
- *  Create a model object representation of a Podspec file.
+ *  Create a model object representation of a podspec file.
  *
- *  @param fileURL Local Podspec file URL.
+ *  @param fileURL Local JSON podspec file URL.
  *
- *  @return Model object representation of a Podspec file.
+ *  @return Model object representation of a podspec file.
  */
 - (instancetype)initWithFileURL:(NSURL *)fileURL NS_DESIGNATED_INITIALIZER;
 

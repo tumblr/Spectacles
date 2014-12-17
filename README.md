@@ -5,7 +5,7 @@
 [![License](https://img.shields.io/cocoapods/l/Spectacles.svg?style=flat)](http://cocoadocs.org/docsets/Spectacles)
 [![Platform](https://img.shields.io/cocoapods/p/Spectacles.svg?style=flat)](http://cocoadocs.org/docsets/Spectacles)
 
-A tiny library for podspec parsing.
+A tiny library for parsing JSON podspecs.
 
 ## Usage
 

@@ -5,7 +5,7 @@ static NSString * const PodspecKeyVersion = @"version";
 static NSString * const PodspecKeySummary = @"summary";
 static NSString * const PodspecKeyHomepageURL = @"homepage";
 
-@interface TMPodspec()
+@interface TMPodspec ()
 
 @property (nonatomic) NSDictionary *dictionary;
 
@@ -27,12 +27,19 @@ static NSString * const PodspecKeyHomepageURL = @"homepage";
         }
         
         NSError *error;
-        _dictionary = [NSJSONSerialization JSONObjectWithData:data options:0 error:&error];
+        id object = [NSJSONSerialization JSONObjectWithData:data options:0 error:&error];
         
         if (error) {
             NSLog(@"Error parsing file (%@) as JSON: %@", fileURL, error);
             return nil;
         }
+        
+        if (![object isKindOfClass:[NSDictionary class]]) {
+            NSLog(@"File (%@) must map to an `NSDictionary` type", fileURL);
+            return nil;
+        }
+        
+        _dictionary = object;
     }
     
     return self;

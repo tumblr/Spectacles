@@ -1,7 +1,7 @@
 {
   "name": "Spectacles",
   "version": "1.0.0",
-  "summary": "A tiny library for podspec parsing.",
+  "summary": "A tiny library for parsing JSON podspecs.",
   "authors": { 
     "Bryan Irace": "bryan@irace.me"
   },
