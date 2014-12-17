@@ -29,7 +29,7 @@ Spectacles is available through [CocoaPods](http://cocoapods.org). To install it
 
 ## Contributing
 
-Please see [CONTRIBUTING.md](https://github.com/tumblr/XExtensionItem/blob/master/CONTRIBUTING.md) for information on how to help out.
+Please see [CONTRIBUTING.md](https://github.com/tumblr/Spectacles/blob/master/CONTRIBUTING.md) for information on how to help out.
 
 ## Contact
 
