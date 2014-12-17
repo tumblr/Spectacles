@@ -10,11 +10,11 @@ A tiny library for podspec parsing.
 ## Usage
 
 ```objc
-    TMPodspec *spec = [[TMPodspec alloc] initWithFileURL:
-                       [[NSBundle mainBundle] URLForResource:@"Spectacles.podspec" withExtension:@"json"]];
-    
-    self.label = [[UILabel alloc] init];
-    self.label.text = [NSString stringWithFormat:@"%@ (%@)", spec.name, spec.version];
+TMPodspec *spec = [[TMPodspec alloc] initWithFileURL:
+                   [[NSBundle mainBundle] URLForResource:@"Spectacles.podspec" withExtension:@"json"]];
+
+self.label = [[UILabel alloc] init];
+self.label.text = [NSString stringWithFormat:@"%@ (%@)", spec.name, spec.version];
 ```
 
 To run the example project, clone the repo, and run `pod install` from the Example directory first.
