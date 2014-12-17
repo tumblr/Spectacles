@@ -1,0 +1,14 @@
+PODS:
+  - Spectacles (0.1.0)
+
+DEPENDENCIES:
+  - Spectacles (from `../`)
+
+EXTERNAL SOURCES:
+  Spectacles:
+    :path: ../
+
+SPEC CHECKSUMS:
+  Spectacles: a1fb8d54d69380b5e650dd382dd135916c6abf31
+
+COCOAPODS: 0.35.0

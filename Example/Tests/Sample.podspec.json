@@ -1,0 +1,25 @@
+{
+    "name": "Sample",
+    "version": "1.0.0",
+    "summary": "A library with some functionality",
+    "authors": {
+        "Bryan Irace": "bryan@irace.me"
+    },
+    "homepage": "https://github.com/irace/Sample",
+    "license": {
+        "type": "Apache 2.0",
+        "file": "LICENSE"
+    },
+    "platforms": {
+        "ios": "8.0"
+    },
+    "requires_arc": true,
+    "source": {
+        "git": "https://github.com/irace/Sample",
+        "tag": "1.0.0"
+    },
+    "source_files": "Pod/Classes",
+    "frameworks": [
+        "Foundation"
+    ]
+}
