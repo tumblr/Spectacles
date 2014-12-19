@@ -1,3 +1,5 @@
+![Spectacles](https://github.com/tumblr/Spectacles/blob/master/Assets/logo.png)
+
 # Spectacles
 
 [![CI Status](http://img.shields.io/travis/tumblr/Spectacles.svg?style=flat)](https://travis-ci.org/Bryan Irace/Spectacles)
