@@ -16,9 +16,11 @@ static NSString * const PodspecKeyHomepageURL = @"homepage";
 #pragma mark - Initialization
 
 - (instancetype)initWithFileURL:(NSURL *)fileURL {
-    NSParameterAssert(fileURL);
-    
     if (self = [super init]) {
+        if (!fileURL) {
+            return nil;
+        }
+        
         NSData *data = [NSData dataWithContentsOfURL:fileURL];
         
         if (!data) {

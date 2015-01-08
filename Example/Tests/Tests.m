@@ -31,4 +31,8 @@
     XCTAssertEqualObjects(self.spec.homepageURL, [NSURL URLWithString:@"https://github.com/irace/Sample"]);
 }
 
+- (void)testNilFileURLDoesNotThrowException {
+    XCTAssertNoThrow([[TMPodspec alloc] initWithFileURL:nil]);
+}
+
 @end

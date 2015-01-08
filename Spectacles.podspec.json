@@ -1,6 +1,6 @@
 {
   "name": "Spectacles",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "summary": "A tiny library for parsing JSON podspecs.",
   "authors": { 
     "Bryan Irace": "bryan@irace.me"
@@ -17,7 +17,7 @@
   "requires_arc": true,
   "source": {
     "git": "https://github.com/tumblr/Spectacles.git",
-    "tag": "1.0.0"
+    "tag": "1.0.1"
   },
   "source_files": "Pod/Classes",
   "frameworks": [
