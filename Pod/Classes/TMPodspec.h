@@ -18,14 +18,59 @@
 @property (nonatomic, readonly) NSString *version;
 
 /**
- *  @see http://guides.cocoapods.org/syntax/podspec.html#summary
+ *  @see http://guides.cocoapods.org/syntax/podspec.html#authors
  */
-@property (nonatomic, readonly) NSString *summary;
+@property (nonatomic, readonly) NSArray /* <TMAuthor> */ *authors;
+
+/**
+ *  @see http://guides.cocoapods.org/syntax/podspec.html#social_media_url
+ */
+@property (nonatomic, readonly) NSURL *socialMediaURL;
+
+/**
+ *  @see http://guides.cocoapods.org/syntax/podspec.html#docset_url
+ */
+@property (nonatomic, readonly) NSURL *docsetURL;
 
 /**
  *  @see http://guides.cocoapods.org/syntax/podspec.html#homepage
  */
 @property (nonatomic, readonly) NSURL *homepageURL;
+
+/**
+ *  @see http://guides.cocoapods.org/syntax/podspec.html#summary
+ */
+@property (nonatomic, readonly) NSString *summary;
+
+/**
+ *  @see http://guides.cocoapods.org/syntax/podspec.html#description
+ */
+@property (nonatomic, readonly) NSString *descriptionString;
+
+/**
+ *  @see http://guides.cocoapods.org/syntax/podspec.html#screenshots
+ */
+@property (nonatomic, readonly) NSArray /* <NSURL> */ *screenshotURLs;
+
+/**
+ *  @see http://guides.cocoapods.org/syntax/podspec.html#documentation_url
+ */
+@property (nonatomic, readonly) NSURL *documentationURL;
+
+/**
+ *  @see http://guides.cocoapods.org/syntax/podspec.html#prepare_command
+ */
+@property (nonatomic, readonly) NSString *prepareCommand;
+
+/**
+ *  @see http://guides.cocoapods.org/syntax/podspec.html#deprecated
+ */
+@property (nonatomic, readonly, getter=isDeprecated) BOOL deprecated;
+
+/**
+ *  @see http://guides.cocoapods.org/syntax/podspec.html#deprecated_in_favor_of
+ */
+@property (nonatomic, readonly) NSString *podNameDeprecatedInFavorOf;
 
 /**
  *  Create a model object representation of a podspec file.
