@@ -80,6 +80,15 @@
  *  @return Model object representation of a podspec file, or `nil` if either 1) `fileURL` is `nil` 2) a file does not
  *  exist at `fileURL` 3) the file at `fileURL` cannot be parsed as JSON 4) the JSON is not a dictionary type.
  */
-- (instancetype)initWithFileURL:(NSURL *)fileURL NS_DESIGNATED_INITIALIZER;
+- (instancetype)initWithFileURL:(NSURL *)fileURL;
+
+/**
+ *  Create a model object representation of a podspec file.
+ *
+ *  @param data JSON Data of the Podspec.
+ *
+ *  @return Model object representation of a podspec file, or `nil` if either 1) `data` is `nil` 2) the `data` cannot be parsed as JSON 3) the JSON is not a dictionary type.
+ */
+- (instancetype)initWithData:(NSData *)data NS_DESIGNATED_INITIALIZER;
 
 @end

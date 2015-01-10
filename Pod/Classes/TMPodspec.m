@@ -30,16 +30,10 @@ static NSString * const PodspecKeyDeprecatedInFavorOf = @"deprecated_in_favor_of
 
 #pragma mark - Initialization
 
-- (instancetype)initWithFileURL:(NSURL *)fileURL {
+- (instancetype)initWithData:(NSData *)data {
     if (self = [super init]) {
-        if (!fileURL) {
-            return nil;
-        }
-        
-        NSData *data = [NSData dataWithContentsOfURL:fileURL];
-        
         if (!data) {
-            NSLog(@"No file at URL: %@", fileURL);
+            NSLog(@"No podspec data specified: %@", data);
             return nil;
         }
         
@@ -47,12 +41,12 @@ static NSString * const PodspecKeyDeprecatedInFavorOf = @"deprecated_in_favor_of
         id object = [NSJSONSerialization JSONObjectWithData:data options:0 error:&error];
         
         if (error) {
-            NSLog(@"Error parsing file (%@) as JSON: %@", fileURL, error);
+            NSLog(@"Error parsing podspec data (%@) as JSON: %@", data, error);
             return nil;
         }
         
         if (![object isKindOfClass:[NSDictionary class]]) {
-            NSLog(@"File (%@) must map to an `NSDictionary` type", fileURL);
+            NSLog(@"Podspec data (%@) must map to an `NSDictionary` type", data);
             return nil;
         }
         
@@ -62,8 +56,12 @@ static NSString * const PodspecKeyDeprecatedInFavorOf = @"deprecated_in_favor_of
     return self;
 }
 
+- (instancetype)initWithFileURL:(NSURL *)fileURL {
+    return [self initWithData:[NSData dataWithContentsOfURL:fileURL]];
+}
+
 - (instancetype)init {
-    return [self initWithFileURL:nil];
+    return [self initWithData:nil];
 }
 
 #pragma mark - Properties
@@ -84,9 +82,12 @@ static NSString * const PodspecKeyDeprecatedInFavorOf = @"deprecated_in_favor_of
     NSMutableArray *authors = [NSMutableArray array];
     
     if (authorNamesAndAddresses) {
-        [authorNamesAndAddresses enumerateKeysAndObjectsUsingBlock:^(id name, id emailAddress, BOOL *stop) {
-            if ([name isKindOfClass:[NSString class]] && [emailAddress isKindOfClass:[NSString class]]) {
-                TMAuthor *author = [[TMAuthor alloc] initWithName:(NSString *)name emailAddress:(NSString *)emailAddress];
+        [authorNamesAndAddresses enumerateKeysAndObjectsUsingBlock:^(id key, id value, BOOL *stop) {
+            NSString *name = [key isKindOfClass:[NSString class]] ? key : nil;
+            NSString *emailAddress = [value isKindOfClass:[NSString class]] ? value : nil;
+            
+            if (key) {
+                TMAuthor *author = [[TMAuthor alloc] initWithName:name emailAddress:emailAddress];
                 [authors addObject:author];
             }
         }];

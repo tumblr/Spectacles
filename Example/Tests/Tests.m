@@ -7,6 +7,10 @@
 @interface SpectaclesTest : XCTestCase
 
 @property (nonatomic) TMPodspec *spec;
+@property (nonatomic) TMAuthor *bryanIrace;
+@property (nonatomic) TMAuthor *matthewBischoff;
+@property (nonatomic) TMAuthor *samGiddins;
+
 
 @end
 
@@ -15,6 +19,10 @@
 - (void)setUp {
     self.spec = [[TMPodspec alloc] initWithFileURL:
                  [[NSBundle bundleForClass:[self class]] URLForResource:@"Sample.podspec" withExtension:@"json"]];
+    
+    self.bryanIrace = [[TMAuthor alloc] initWithName:@"Bryan Irace" emailAddress:@"bryan@irace.me"];
+    self.matthewBischoff = [[TMAuthor alloc] initWithName:@"Matthew Bischoff" emailAddress:nil];
+    self.samGiddins = [[TMAuthor alloc] initWithName:@"Sam Giddins" emailAddress:nil];
 }
 
 - (void)testSpecName {
@@ -26,7 +34,29 @@
 }
 
 - (void)testSpecAuthors {
-    XCTAssertEqualObjects(self.spec.authors, @[[[TMAuthor alloc] initWithName:@"Bryan Irace" emailAddress:@"bryan@irace.me"]]);
+    XCTAssertEqualObjects(self.spec.authors, @[self.bryanIrace]);
+}
+
+- (void)testAuthorAsString {
+    TMPodspec *authorAsStringSpec = [[TMPodspec alloc] initWithData:[[self class] JSONDataForDictionary:@{@"author": self.matthewBischoff.name}]];
+    
+    XCTAssertEqualObjects(authorAsStringSpec.authors, @[self.matthewBischoff]);
+}
+
+- (void)testAuthorAsArray {
+    NSData *data = [[self class] JSONDataForDictionary:@{@"authors": @[self.matthewBischoff.name, self.samGiddins.name]}];
+    TMPodspec *authorAsStringSpec = [[TMPodspec alloc] initWithData:data];
+    
+    NSArray *authors = @[self.matthewBischoff, self.samGiddins];
+    XCTAssertEqualObjects(authorAsStringSpec.authors, authors);
+}
+
+- (void)testAuthorAsDictionary {
+    NSData *data = [[self class] JSONDataForDictionary:@{@"authors": @{self.bryanIrace.name: self.bryanIrace.emailAddress, self.matthewBischoff.name: [NSNull null]}}];
+    TMPodspec *authorAsStringSpec = [[TMPodspec alloc] initWithData:data];
+    
+    NSArray *authors = @[self.bryanIrace, self.matthewBischoff];
+    XCTAssertEqualObjects([NSSet setWithArray:authorAsStringSpec.authors], [NSSet setWithArray:authors]);
 }
 
 - (void)testSpecSocialMediaURL {
@@ -73,5 +103,12 @@
 - (void)testNilFileURLDoesNotThrowException {
     XCTAssertNoThrow([[TMPodspec alloc] initWithFileURL:nil]);
 }
+
+#pragma mark - Helpers
+
++ (NSData *)JSONDataForDictionary:(NSDictionary *)dictionary {
+    return [NSJSONSerialization dataWithJSONObject:dictionary options:0 error:nil];
+}
+
 
 @end

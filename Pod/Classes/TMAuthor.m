@@ -17,11 +17,18 @@
 }
 
 - (BOOL)isEqual:(id)object {
+    BOOL equal = NO;
+    
     if ([object isKindOfClass:[self class]]) {
-        return [self.name isEqual:((TMAuthor *)object).name] && [self.emailAddress isEqual:((TMAuthor *)object).emailAddress];;
+        TMAuthor *author = (TMAuthor *)object;
+
+        BOOL haveEqualNames = (!self.name && !author.name) || [self.name isEqualToString:author.name];
+        BOOL haveEqualEmailAddresses = (!self.emailAddress && !author.emailAddress) || [self.emailAddress isEqualToString:author.emailAddress];
+        
+        equal = haveEqualNames && haveEqualEmailAddresses;
     }
     
-    return NO;
+    return equal;
 }
 
 - (NSUInteger)hash {
