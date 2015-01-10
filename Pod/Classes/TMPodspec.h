@@ -20,7 +20,7 @@
 /**
  *  @see http://guides.cocoapods.org/syntax/podspec.html#authors
  */
-@property (nonatomic, readonly) NSArray /* <TMAuthor> */ *authors;
+@property (nonatomic, readonly) NSArray/*<TMAuthor>*/ *authors;
 
 /**
  *  @see http://guides.cocoapods.org/syntax/podspec.html#social_media_url
