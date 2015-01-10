@@ -63,7 +63,7 @@
 }
 
 - (void)testDeprecated {
-    XCTAssertEqual(self.spec.deprecated, YES);
+    XCTAssertEqual(self.spec.isDeprecated, YES);
 }
 
 - (void)testDeprecatedInFavorOf {
