@@ -140,13 +140,17 @@ static NSString * const PodspecKeyDeprecatedInFavorOf = @"deprecated_in_favor_of
         for (id screenshotURLValue in multipleScreenshotURLStrings) {
             if ([screenshotURLValue isKindOfClass:[NSString class]]) {
                 NSURL *URL = [NSURL URLWithString:(NSString *)screenshotURLValue];
-                [screenshotURLs addObject:URL];
+                if (URL) {
+                    [screenshotURLs addObject:URL];
+                }
             }
         }
     }
     else if (singleScreenshotURLString) {
         NSURL *URL = [NSURL URLWithString:singleScreenshotURLString];
-        [screenshotURLs addObject:URL];
+        if (URL) {
+            [screenshotURLs addObject:URL];
+        }
     }
     
     return [screenshotURLs count] ? screenshotURLs : nil;
