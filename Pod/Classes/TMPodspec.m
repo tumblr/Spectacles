@@ -95,13 +95,13 @@ static NSString * const PodspecKeyDeprecatedInFavorOf = @"deprecated_in_favor_of
         for (id name in authorNames) {
             if ([name isKindOfClass:[NSString class]]) {
                 TMAuthor *author = [[TMAuthor alloc] initWithName:(NSString *)name emailAddress:nil];
-                [authors addObject:(NSString *)author];
+                [authors addObject:author];
             }
         }
     }
     else if (authorName) {
         TMAuthor *author = [[TMAuthor alloc] initWithName:authorName emailAddress:nil];
-        [authors addObject:(NSString *)author];
+        [authors addObject:author];
     }
     else {
         return nil;
