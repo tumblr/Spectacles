@@ -22,6 +22,6 @@
 @property (nonatomic, readonly) NSString *emailAddress;
 
 /// Returns an initialized TMAuthor with the given name and email address.
-- (instancetype)initWithName:(NSString *)name emailAddress:(NSString *)emailAddress;
+- (instancetype)initWithName:(NSString *)name emailAddress:(NSString *)emailAddress NS_DESIGNATED_INITIALIZER;
 
 @end
