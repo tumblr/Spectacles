@@ -50,7 +50,7 @@
 /**
  *  @see http://guides.cocoapods.org/syntax/podspec.html#screenshots
  */
-@property (nonatomic, readonly) NSArray /* <NSURL> */ *screenshotURLs;
+@property (nonatomic, readonly) NSArray/*<NSURL>*/ *screenshotURLs;
 
 /**
  *  @see http://guides.cocoapods.org/syntax/podspec.html#documentation_url
