@@ -1,11 +1,3 @@
-//
-//  TMLibraryVersion.m
-//  Pods
-//
-//  Created by Matthew Bischoff on 1/10/15.
-//
-//
-
 #import "TMLibraryVersion.h"
 
 typedef NS_ENUM(NSInteger, TMLibraryVersionComponent) {
