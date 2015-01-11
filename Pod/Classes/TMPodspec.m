@@ -1,5 +1,6 @@
 #import "TMPodspec.h"
 #import "TMAuthor.h"
+#import "TMLibraryVersion.h"
 
 #pragma mark - Root Specification Keys
 

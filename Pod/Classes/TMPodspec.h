@@ -1,6 +1,6 @@
 #import <Foundation/Foundation.h>
 
-#import "TMLibraryVersion.h"
+@class TMLibraryVersion;
 
 /**
  *  Parses a CocoaPods “podspec” file and provides a model object representation.
