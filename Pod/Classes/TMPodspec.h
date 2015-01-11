@@ -1,5 +1,7 @@
 #import <Foundation/Foundation.h>
 
+#import "TMLibraryVersion.h"
+
 /**
  *  Parses a CocoaPods “podspec” file and provides a model object representation.
  *
@@ -16,6 +18,11 @@
  *  @see http://guides.cocoapods.org/syntax/podspec.html#version
  */
 @property (nonatomic, readonly) NSString *version;
+
+/**
+ *  @see http://guides.cocoapods.org/syntax/podspec.html#version
+ */
+@property (nonatomic, readonly) TMLibraryVersion *libraryVersion;
 
 /**
  *  @see http://guides.cocoapods.org/syntax/podspec.html#authors

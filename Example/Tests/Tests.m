@@ -30,7 +30,49 @@
 }
 
 - (void)testSpecVersion {
-    XCTAssertEqualObjects(self.spec.version, @"1.0.0");
+    XCTAssertEqualObjects(self.spec.version, @"1.3.4");
+}
+
+- (void)testSpecLibraryVersion {
+    XCTAssertEqual(self.spec.libraryVersion.majorVersion, 1);
+    XCTAssertEqual(self.spec.libraryVersion.minorVersion, 3);
+    XCTAssertEqual(self.spec.libraryVersion.patchVersion, 4);
+    
+    XCTAssertFalse(self.spec.libraryVersion.prereleaseVersion);
+    XCTAssertNil(self.spec.libraryVersion.prereleaseVersionIdentifier);
+}
+
+- (void)testPrereleaseVersion {
+    TMPodspec *spec = [[TMPodspec alloc] initWithData:[[self class] JSONDataForDictionary:@{@"version": @"1.4.7-beta3"}]];
+
+    XCTAssertEqual(spec.libraryVersion.majorVersion, 1);
+    XCTAssertEqual(spec.libraryVersion.minorVersion, 4);
+    XCTAssertEqual(spec.libraryVersion.patchVersion, 7);
+    
+    XCTAssertTrue(spec.libraryVersion.isPrereleaseVersion);
+    XCTAssertEqualObjects(spec.libraryVersion.prereleaseVersionIdentifier, @"beta3");
+}
+
+- (void)testShortVersion {
+    TMPodspec *spec = [[TMPodspec alloc] initWithData:[[self class] JSONDataForDictionary:@{@"version": @"1"}]];
+    
+    XCTAssertEqual(spec.libraryVersion.majorVersion, 1);
+    XCTAssertEqual(spec.libraryVersion.minorVersion, 0);
+    XCTAssertEqual(spec.libraryVersion.patchVersion, 0);
+    
+    XCTAssertFalse(spec.libraryVersion.isPrereleaseVersion);
+    XCTAssertNil(spec.libraryVersion.prereleaseVersionIdentifier);
+}
+
+- (void)testShortBetaVersion {
+    TMPodspec *spec = [[TMPodspec alloc] initWithData:[[self class] JSONDataForDictionary:@{@"version": @"1-beta74"}]];
+    
+    XCTAssertEqual(spec.libraryVersion.majorVersion, 1);
+    XCTAssertEqual(spec.libraryVersion.minorVersion, 0);
+    XCTAssertEqual(spec.libraryVersion.patchVersion, 0);
+    
+    XCTAssertTrue(spec.libraryVersion.isPrereleaseVersion);
+    XCTAssertEqualObjects(spec.libraryVersion.prereleaseVersionIdentifier, @"beta74");
 }
 
 - (void)testSpecAuthors {

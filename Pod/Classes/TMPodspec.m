@@ -74,6 +74,14 @@ static NSString * const PodspecKeyDeprecatedInFavorOf = @"deprecated_in_favor_of
     return [self stringForKey:PodspecKeyVersion];
 }
 
+- (TMLibraryVersion *)libraryVersion {
+    if (self.version) {
+        return [[TMLibraryVersion alloc] initWithString:self.version];
+    }
+    
+    return nil;
+}
+
 - (NSArray *)authors {
     NSString *authorName = [self stringForKey:PodspecKeyAuthor];
     NSArray *authorNames = [self arrayForKey:PodspecKeyAuthors];
