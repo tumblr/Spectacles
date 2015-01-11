@@ -3,6 +3,7 @@
 
 #import "TMPodspec.h"
 #import "TMAuthor.h"
+#import "TMLibraryVersion.h"
 
 @interface SpectaclesTest : XCTestCase
 
