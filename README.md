@@ -9,7 +9,7 @@
 
 A tiny library for parsing JSON podspecs.
 
-This only exposes a very small subset of podspec properties at the moment (name, version, etc.), but could theoretically be expanded to include everything in the [specification](http://guides.cocoapods.org/syntax/podspec.html).
+This only exposes a subset of podspec properties at the moment but could theoretically be expanded to include everything in the [specification](http://guides.cocoapods.org/syntax/podspec.html).
 
 ## Usage
 
