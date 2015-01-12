@@ -1,15 +1,25 @@
 {
     "name": "Sample",
     "version": "1.0.0",
-    "summary": "A library with some functionality",
     "authors": {
         "Bryan Irace": "bryan@irace.me"
     },
-    "homepage": "https://github.com/irace/Sample",
+    "author": "Bryan",
+    "social_media_url": "https://twitter.com/irace",
+    "docset_url": "https://github.com/irace/Sample/Docset.atom",
     "license": {
         "type": "Apache 2.0",
         "file": "LICENSE"
     },
+    "homepage": "https://github.com/irace/Sample",
+    "summary": "A library with some functionality",
+    "description": "A library with some functionality…and some more.",
+    "screenshot": "https://github.com/irace/Sample/Screenshot.gif",
+    "screenshots": ["https://github.com/irace/Sample/Screenshot.gif", "https://github.com/irace/Sample/Screenshot2.gif"],
+    "documentation_url": "https://github.com/irace/Sample/Docs",
+    "prepare_command": "ruby build_files.rb",
+    "deprecated": true,
+    "deprecated_in_favor_of": "BlogQuest",
     "platforms": {
         "ios": "8.0"
     },
