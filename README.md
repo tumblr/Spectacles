@@ -9,7 +9,7 @@
 
 A tiny library for parsing JSON podspecs.
 
-This only exposes a subset of podspec properties at the moment but could theoretically be expanded to include everything in the [specification](http://guides.cocoapods.org/syntax/podspec.html).
+This only exposes a subset of podspec properties at the moment but could theoretically be expanded to include everything in the [specification](http://guides.cocoapods.org/syntax/podspec.html). We currently use it in `TMTumblrSDK` for [version reporting](https://github.com/tumblr/TMTumblrSDK/blob/master/TMTumblrSDK/Core/TMSDKUserAgent.m).
 
 ## Usage
 
