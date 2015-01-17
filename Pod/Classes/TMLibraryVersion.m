@@ -6,8 +6,8 @@ typedef NS_ENUM(NSInteger, TMLibraryVersionComponent) {
     TMLibraryVersionComponentPatch,
 };
 
-static NSString * TMLibraryVersionComponentSeparator = @".";
-static NSString * TMLibraryVersionPrereleaseSeparator = @"-";
+static NSString * const TMLibraryVersionComponentSeparator = @".";
+static NSString * const TMLibraryVersionPrereleaseSeparator = @"-";
 
 @interface TMLibraryVersion ()
 
