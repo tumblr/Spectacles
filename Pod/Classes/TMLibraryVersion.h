@@ -4,6 +4,7 @@
  *  `TMLibraryVersion` is a model object describing the semantic version of a Cocoapod. It is designed to parse the "version" field of a Podspec.json file and provide access to the structured version information contained in the string.
  *
  *  @see http://guides.cocoapods.org/making/making-a-cocoapod.html#cocoapods-versioning-specifics
+ *  @see http://semver.org
  */
 @interface TMLibraryVersion : NSObject
 
