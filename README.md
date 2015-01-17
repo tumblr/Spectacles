@@ -2,7 +2,7 @@
 
 # Spectacles
 
-[![CI Status](http://img.shields.io/travis/tumblr/Spectacles.svg?style=flat)](https://travis-ci.org/Bryan Irace/Spectacles)
+[![CI Status](http://img.shields.io/travis/tumblr/Spectacles.svg?style=flat)](https://travis-ci.org/tumblr/Spectacles)
 [![Version](https://img.shields.io/cocoapods/v/Spectacles.svg?style=flat)](http://cocoadocs.org/docsets/Spectacles)
 [![License](https://img.shields.io/cocoapods/l/Spectacles.svg?style=flat)](http://cocoadocs.org/docsets/Spectacles)
 [![Platform](https://img.shields.io/cocoapods/p/Spectacles.svg?style=flat)](http://cocoadocs.org/docsets/Spectacles)
