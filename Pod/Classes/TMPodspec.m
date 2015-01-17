@@ -1,5 +1,6 @@
 #import "TMPodspec.h"
 #import "TMAuthor.h"
+#import "TMLibraryVersion.h"
 
 #pragma mark - Root Specification Keys
 
@@ -72,6 +73,14 @@ static NSString * const PodspecKeyDeprecatedInFavorOf = @"deprecated_in_favor_of
 
 - (NSString *)version {
     return [self stringForKey:PodspecKeyVersion];
+}
+
+- (TMLibraryVersion *)libraryVersion {
+    if (self.version) {
+        return [[TMLibraryVersion alloc] initWithString:self.version];
+    }
+    
+    return nil;
 }
 
 - (NSArray *)authors {
