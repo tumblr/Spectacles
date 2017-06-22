@@ -21,6 +21,14 @@ self.label = [[UILabel alloc] init];
 self.label.text = [NSString stringWithFormat:@"%@ (%@)", spec.name, spec.version];
 ```
 
+```swift
+let jsonURL = Bundle.main.url(forResource: "Spectacles.podspec", withExtension: "json")
+let spec = TMPodspec(fileURL: jsonURL)!
+        
+self.label.text = NSString(format: "%@ (%@)", spec.name, spec.version) as String
+```
+
+
 To run the example project, clone the repo, and run `pod install` from the Example directory first.
 
 ## Requirements
