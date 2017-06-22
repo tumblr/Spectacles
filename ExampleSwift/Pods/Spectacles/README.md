@@ -2,14 +2,14 @@
 
 # Spectacles
 
-[![CI Status](http://img.shields.io/travis/tumblr/Spectacles.svg?style=flat)](https://travis-ci.org/tumblr/Spectacles)
+[![CI Status](http://img.shields.io/travis/tumblr/Spectacles.svg?style=flat)](https://travis-ci.org/Bryan Irace/Spectacles)
 [![Version](https://img.shields.io/cocoapods/v/Spectacles.svg?style=flat)](http://cocoadocs.org/docsets/Spectacles)
 [![License](https://img.shields.io/cocoapods/l/Spectacles.svg?style=flat)](http://cocoadocs.org/docsets/Spectacles)
 [![Platform](https://img.shields.io/cocoapods/p/Spectacles.svg?style=flat)](http://cocoadocs.org/docsets/Spectacles)
 
 A tiny library for parsing JSON podspecs.
 
-This only exposes a subset of podspec properties at the moment but could theoretically be expanded to include everything in the [specification](http://guides.cocoapods.org/syntax/podspec.html). We currently use it in `TMTumblrSDK` for [version reporting](https://github.com/tumblr/TMTumblrSDK/blob/master/TMTumblrSDK/Core/TMSDKUserAgent.m).
+This only exposes a subset of podspec properties at the moment but could theoretically be expanded to include everything in the [specification](http://guides.cocoapods.org/syntax/podspec.html).
 
 ## Usage
 
@@ -20,14 +20,6 @@ TMPodspec *spec = [[TMPodspec alloc] initWithFileURL:
 self.label = [[UILabel alloc] init];
 self.label.text = [NSString stringWithFormat:@"%@ (%@)", spec.name, spec.version];
 ```
-
-```swift
-let jsonURL = Bundle.main.url(forResource: "Spectacles.podspec", withExtension: "json")
-let spec = TMPodspec(fileURL: jsonURL)!
-        
-self.label.text = NSString(format: "%@ (%@)", spec.name, spec.version) as String
-```
-
 
 To run the example project, clone the repo, and run `pod install` from the Example directory first.
 

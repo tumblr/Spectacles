@@ -1,0 +1,6 @@
+framework module Spectacles {
+  umbrella header "Spectacles-umbrella.h"
+
+  export *
+  module * { export * }
+}

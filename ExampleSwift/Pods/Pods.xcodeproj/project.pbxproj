@@ -1,0 +1,735 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		15D29F25F99158D9BA98E4863F46D28A /* TMLibraryVersion.h in Headers */ = {isa = PBXBuildFile; fileRef = 3F44CEA7BC3E08884065E21865C9A1B2 /* TMLibraryVersion.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1BA0758A0CB9EC20CF17F104C239FA40 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
+		1BE8B896107645962EC2EEAA9BAEFAE5 /* TMAuthor.m in Sources */ = {isa = PBXBuildFile; fileRef = 635A7788F508883E986616B662D7C96F /* TMAuthor.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		1F5AAF64563DC826B9257EC69DF30496 /* Pods-SpectaclesSwift-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = C15E37A7B985B8883A992606494492B7 /* Pods-SpectaclesSwift-dummy.m */; };
+		346A3D095ED29D0825DC5D57799A8B59 /* TMPodspec.h in Headers */ = {isa = PBXBuildFile; fileRef = 4B09BD36BBDE627F736D64591664ADCE /* TMPodspec.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		54C6FFC4C201E12B992A7C176678CFC8 /* Spectacles-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 4AB7D67743ACAB16018E5087AA6D424D /* Spectacles-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5F28CB033A133E6C39EBBCE65FC1A3ED /* TMPodspec.m in Sources */ = {isa = PBXBuildFile; fileRef = 425E3543560ACD2F2F9A94DC97B42F11 /* TMPodspec.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		673D0B29922E7C467E5DECD3758441C9 /* TMLibraryVersion.m in Sources */ = {isa = PBXBuildFile; fileRef = 0EB8A2CE20DEEE6BEA7DFEA78517120F /* TMLibraryVersion.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		95575EE1091A8D9867D8DB590F4D86EE /* TMAuthor.h in Headers */ = {isa = PBXBuildFile; fileRef = F07C2542C6FD340552FB4DDFE9ADFEB8 /* TMAuthor.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		955CF4CBDB01F873025EEC6BA625E871 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
+		C4740060D3964332B3A57FCE85A074E6 /* Pods-SpectaclesSwiftTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D6D978127A0187B82D356A4839FACE6 /* Pods-SpectaclesSwiftTests-dummy.m */; };
+		C648E5E8462DCBD7A4A70AE186C65696 /* Pods-SpectaclesSwiftTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = E75BB47B5D271591CD90CE228912F3A7 /* Pods-SpectaclesSwiftTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D7307653D5696D7D3A87FDF4AB01B213 /* Spectacles-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C1F777DE0DF70F8918A438432987EB1 /* Spectacles-dummy.m */; };
+		D7391B418DA58242F40FD341F8C12531 /* Pods-SpectaclesSwift-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = F20C9AB496A617BC29C7E71357DDD3B5 /* Pods-SpectaclesSwift-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E76B45BABE54B11DF6B6B3EF1F3ED1D3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		7483EDF5BFE1B64C731E2A2CFA6C9248 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B7AB6B9037AD4D21E432BB7F8F69582E;
+			remoteInfo = Spectacles;
+		};
+		98993DB0F179868BFC3AF15D46715515 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B7AB6B9037AD4D21E432BB7F8F69582E;
+			remoteInfo = Spectacles;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		04DC3BA32CF664D862682926F0B816EA /* Pods-SpectaclesSwiftTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SpectaclesSwiftTests.release.xcconfig"; sourceTree = "<group>"; };
+		0773E9D42289D46646EBCE5B3BE6AFC2 /* Spectacles.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Spectacles.xcconfig; sourceTree = "<group>"; };
+		0DED1C523F70E7E009FA7072B7E72C54 /* Pods-SpectaclesSwiftTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SpectaclesSwiftTests.debug.xcconfig"; sourceTree = "<group>"; };
+		0EB8A2CE20DEEE6BEA7DFEA78517120F /* TMLibraryVersion.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = TMLibraryVersion.m; path = Pod/Classes/TMLibraryVersion.m; sourceTree = "<group>"; };
+		2C1F777DE0DF70F8918A438432987EB1 /* Spectacles-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Spectacles-dummy.m"; sourceTree = "<group>"; };
+		3F44CEA7BC3E08884065E21865C9A1B2 /* TMLibraryVersion.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TMLibraryVersion.h; path = Pod/Classes/TMLibraryVersion.h; sourceTree = "<group>"; };
+		425E3543560ACD2F2F9A94DC97B42F11 /* TMPodspec.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = TMPodspec.m; path = Pod/Classes/TMPodspec.m; sourceTree = "<group>"; };
+		49367DB40CE5005AEE68D9CF137668E9 /* Pods-SpectaclesSwift-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-SpectaclesSwift-frameworks.sh"; sourceTree = "<group>"; };
+		4AB7D67743ACAB16018E5087AA6D424D /* Spectacles-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Spectacles-umbrella.h"; sourceTree = "<group>"; };
+		4B09BD36BBDE627F736D64591664ADCE /* TMPodspec.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TMPodspec.h; path = Pod/Classes/TMPodspec.h; sourceTree = "<group>"; };
+		5C2052707DE397BFB0A6ECEC2CFC075B /* Pods-SpectaclesSwiftTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-SpectaclesSwiftTests-acknowledgements.plist"; sourceTree = "<group>"; };
+		5E76B7E48C8D5B758A7E5C4EAC82C104 /* Pods_SpectaclesSwiftTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_SpectaclesSwiftTests.framework; path = "Pods-SpectaclesSwiftTests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5EB9C3A096AD6800C7EB6F70A83035E7 /* Pods-SpectaclesSwiftTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-SpectaclesSwiftTests.modulemap"; sourceTree = "<group>"; };
+		635A7788F508883E986616B662D7C96F /* TMAuthor.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = TMAuthor.m; path = Pod/Classes/TMAuthor.m; sourceTree = "<group>"; };
+		635B93610650C15939202FF35A7A2EF5 /* Spectacles.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Spectacles.framework; path = Spectacles.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		84FF69F84DFAF9112341B0AA16B1DD8B /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8A6E97DE7B6197A96DD9BAC86FB6808C /* Pods-SpectaclesSwiftTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-SpectaclesSwiftTests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		8D6D978127A0187B82D356A4839FACE6 /* Pods-SpectaclesSwiftTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-SpectaclesSwiftTests-dummy.m"; sourceTree = "<group>"; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		94435F545B13738EB179688350507632 /* Pods_SpectaclesSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_SpectaclesSwift.framework; path = "Pods-SpectaclesSwift.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9BB3C3869B6DC289690171028232D717 /* Pods-SpectaclesSwiftTests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-SpectaclesSwiftTests-frameworks.sh"; sourceTree = "<group>"; };
+		A75366910DF29B65BC5E486C9EC28FB9 /* Pods-SpectaclesSwiftTests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-SpectaclesSwiftTests-resources.sh"; sourceTree = "<group>"; };
+		A7A6644E2A999A39FD396F5F6F529326 /* Pods-SpectaclesSwift-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-SpectaclesSwift-resources.sh"; sourceTree = "<group>"; };
+		AB288EE3AE7D652277F6560E54FF1277 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AB5F1CDC155E9797288E310079FFA649 /* Pods-SpectaclesSwift.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SpectaclesSwift.debug.xcconfig"; sourceTree = "<group>"; };
+		B8D5BDCC8CC0CDD50C57ABB45737A204 /* Pods-SpectaclesSwift-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-SpectaclesSwift-acknowledgements.plist"; sourceTree = "<group>"; };
+		C15E37A7B985B8883A992606494492B7 /* Pods-SpectaclesSwift-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-SpectaclesSwift-dummy.m"; sourceTree = "<group>"; };
+		C44FBC3052AA21133E483D5932112FAB /* Pods-SpectaclesSwift-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-SpectaclesSwift-acknowledgements.markdown"; sourceTree = "<group>"; };
+		DA822DBE9B334C776052CE563B034281 /* Spectacles-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Spectacles-prefix.pch"; sourceTree = "<group>"; };
+		DCB468D01A1E836B5CFC3BD1FEE79577 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DEF6DEE653D16F2703D68D22E2BC96AE /* Spectacles.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = Spectacles.modulemap; sourceTree = "<group>"; };
+		E211990BA15C72C6E22952BD44ADEAD3 /* Pods-SpectaclesSwift.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-SpectaclesSwift.modulemap"; sourceTree = "<group>"; };
+		E75BB47B5D271591CD90CE228912F3A7 /* Pods-SpectaclesSwiftTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-SpectaclesSwiftTests-umbrella.h"; sourceTree = "<group>"; };
+		ED207D463E170AB600BBD066BE8988DE /* Pods-SpectaclesSwift.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SpectaclesSwift.release.xcconfig"; sourceTree = "<group>"; };
+		F07C2542C6FD340552FB4DDFE9ADFEB8 /* TMAuthor.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TMAuthor.h; path = Pod/Classes/TMAuthor.h; sourceTree = "<group>"; };
+		F20C9AB496A617BC29C7E71357DDD3B5 /* Pods-SpectaclesSwift-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-SpectaclesSwift-umbrella.h"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		972B17E060189232815BB26499698841 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E76B45BABE54B11DF6B6B3EF1F3ED1D3 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F45D30F227D2EA2924155FB22A50CB5A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				955CF4CBDB01F873025EEC6BA625E871 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F7236024FE1EDA7BA2E6472394168BA5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1BA0758A0CB9EC20CF17F104C239FA40 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		01C1EECE1924D87529CFD32767B18376 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				624EFDF97A30F2EB5169482351729385 /* Pods-SpectaclesSwift */,
+				D4B169ABB3347DC193D45D2B006F72EC /* Pods-SpectaclesSwiftTests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		0CA2E570F031ADE8D2A46012E89B1245 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				DCB468D01A1E836B5CFC3BD1FEE79577 /* Info.plist */,
+				DEF6DEE653D16F2703D68D22E2BC96AE /* Spectacles.modulemap */,
+				0773E9D42289D46646EBCE5B3BE6AFC2 /* Spectacles.xcconfig */,
+				2C1F777DE0DF70F8918A438432987EB1 /* Spectacles-dummy.m */,
+				DA822DBE9B334C776052CE563B034281 /* Spectacles-prefix.pch */,
+				4AB7D67743ACAB16018E5087AA6D424D /* Spectacles-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/Spectacles";
+			sourceTree = "<group>";
+		};
+		624EFDF97A30F2EB5169482351729385 /* Pods-SpectaclesSwift */ = {
+			isa = PBXGroup;
+			children = (
+				84FF69F84DFAF9112341B0AA16B1DD8B /* Info.plist */,
+				E211990BA15C72C6E22952BD44ADEAD3 /* Pods-SpectaclesSwift.modulemap */,
+				C44FBC3052AA21133E483D5932112FAB /* Pods-SpectaclesSwift-acknowledgements.markdown */,
+				B8D5BDCC8CC0CDD50C57ABB45737A204 /* Pods-SpectaclesSwift-acknowledgements.plist */,
+				C15E37A7B985B8883A992606494492B7 /* Pods-SpectaclesSwift-dummy.m */,
+				49367DB40CE5005AEE68D9CF137668E9 /* Pods-SpectaclesSwift-frameworks.sh */,
+				A7A6644E2A999A39FD396F5F6F529326 /* Pods-SpectaclesSwift-resources.sh */,
+				F20C9AB496A617BC29C7E71357DDD3B5 /* Pods-SpectaclesSwift-umbrella.h */,
+				AB5F1CDC155E9797288E310079FFA649 /* Pods-SpectaclesSwift.debug.xcconfig */,
+				ED207D463E170AB600BBD066BE8988DE /* Pods-SpectaclesSwift.release.xcconfig */,
+			);
+			name = "Pods-SpectaclesSwift";
+			path = "Target Support Files/Pods-SpectaclesSwift";
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
+				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
+				C7E5DB1236E07CB959384CBC64AF79BF /* Pods */,
+				D791635C6E9E63C909922B3C6B994017 /* Products */,
+				01C1EECE1924D87529CFD32767B18376 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D35AF013A5F0BAD4F32504907A52519E /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C7E5DB1236E07CB959384CBC64AF79BF /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D73E4A99737634BB07A4731A2B583A8F /* Spectacles */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		D35AF013A5F0BAD4F32504907A52519E /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		D4B169ABB3347DC193D45D2B006F72EC /* Pods-SpectaclesSwiftTests */ = {
+			isa = PBXGroup;
+			children = (
+				AB288EE3AE7D652277F6560E54FF1277 /* Info.plist */,
+				5EB9C3A096AD6800C7EB6F70A83035E7 /* Pods-SpectaclesSwiftTests.modulemap */,
+				8A6E97DE7B6197A96DD9BAC86FB6808C /* Pods-SpectaclesSwiftTests-acknowledgements.markdown */,
+				5C2052707DE397BFB0A6ECEC2CFC075B /* Pods-SpectaclesSwiftTests-acknowledgements.plist */,
+				8D6D978127A0187B82D356A4839FACE6 /* Pods-SpectaclesSwiftTests-dummy.m */,
+				9BB3C3869B6DC289690171028232D717 /* Pods-SpectaclesSwiftTests-frameworks.sh */,
+				A75366910DF29B65BC5E486C9EC28FB9 /* Pods-SpectaclesSwiftTests-resources.sh */,
+				E75BB47B5D271591CD90CE228912F3A7 /* Pods-SpectaclesSwiftTests-umbrella.h */,
+				0DED1C523F70E7E009FA7072B7E72C54 /* Pods-SpectaclesSwiftTests.debug.xcconfig */,
+				04DC3BA32CF664D862682926F0B816EA /* Pods-SpectaclesSwiftTests.release.xcconfig */,
+			);
+			name = "Pods-SpectaclesSwiftTests";
+			path = "Target Support Files/Pods-SpectaclesSwiftTests";
+			sourceTree = "<group>";
+		};
+		D73E4A99737634BB07A4731A2B583A8F /* Spectacles */ = {
+			isa = PBXGroup;
+			children = (
+				F07C2542C6FD340552FB4DDFE9ADFEB8 /* TMAuthor.h */,
+				635A7788F508883E986616B662D7C96F /* TMAuthor.m */,
+				3F44CEA7BC3E08884065E21865C9A1B2 /* TMLibraryVersion.h */,
+				0EB8A2CE20DEEE6BEA7DFEA78517120F /* TMLibraryVersion.m */,
+				4B09BD36BBDE627F736D64591664ADCE /* TMPodspec.h */,
+				425E3543560ACD2F2F9A94DC97B42F11 /* TMPodspec.m */,
+				0CA2E570F031ADE8D2A46012E89B1245 /* Support Files */,
+			);
+			name = Spectacles;
+			path = Spectacles;
+			sourceTree = "<group>";
+		};
+		D791635C6E9E63C909922B3C6B994017 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				94435F545B13738EB179688350507632 /* Pods_SpectaclesSwift.framework */,
+				5E76B7E48C8D5B758A7E5C4EAC82C104 /* Pods_SpectaclesSwiftTests.framework */,
+				635B93610650C15939202FF35A7A2EF5 /* Spectacles.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		102821B1AB4F012491886C131421EAC8 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C648E5E8462DCBD7A4A70AE186C65696 /* Pods-SpectaclesSwiftTests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		44CC1EE4FCBB4EA45BA87917ED45067D /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D7391B418DA58242F40FD341F8C12531 /* Pods-SpectaclesSwift-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		675A323C7D6D3BD14F45368094D6ACD7 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				54C6FFC4C201E12B992A7C176678CFC8 /* Spectacles-umbrella.h in Headers */,
+				95575EE1091A8D9867D8DB590F4D86EE /* TMAuthor.h in Headers */,
+				15D29F25F99158D9BA98E4863F46D28A /* TMLibraryVersion.h in Headers */,
+				346A3D095ED29D0825DC5D57799A8B59 /* TMPodspec.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		96B27489FE6469C99883EAC744D79910 /* Pods-SpectaclesSwiftTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 27C3C7FB4B7BEDE5E8B93E8B04572AA6 /* Build configuration list for PBXNativeTarget "Pods-SpectaclesSwiftTests" */;
+			buildPhases = (
+				F26DA14C320392E396C7B2718D364DD1 /* Sources */,
+				972B17E060189232815BB26499698841 /* Frameworks */,
+				102821B1AB4F012491886C131421EAC8 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				87EC367152A8B92748310CACCC0D6D3D /* PBXTargetDependency */,
+			);
+			name = "Pods-SpectaclesSwiftTests";
+			productName = "Pods-SpectaclesSwiftTests";
+			productReference = 5E76B7E48C8D5B758A7E5C4EAC82C104 /* Pods_SpectaclesSwiftTests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		B7AB6B9037AD4D21E432BB7F8F69582E /* Spectacles */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8E2B301D73A0E67BD95C5E84418AE778 /* Build configuration list for PBXNativeTarget "Spectacles" */;
+			buildPhases = (
+				8885BA1F1D93B8B5E110F9E9FDAEE8DD /* Sources */,
+				F7236024FE1EDA7BA2E6472394168BA5 /* Frameworks */,
+				675A323C7D6D3BD14F45368094D6ACD7 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Spectacles;
+			productName = Spectacles;
+			productReference = 635B93610650C15939202FF35A7A2EF5 /* Spectacles.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		EA7C8B695B953E1C8B48297B58138BEE /* Pods-SpectaclesSwift */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FF02FCCD75FCA7252165B605726C848E /* Build configuration list for PBXNativeTarget "Pods-SpectaclesSwift" */;
+			buildPhases = (
+				09A67F84DF7BAC314E0AE217C6A7F394 /* Sources */,
+				F45D30F227D2EA2924155FB22A50CB5A /* Frameworks */,
+				44CC1EE4FCBB4EA45BA87917ED45067D /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4659DF6B64DEFB44388077258B17A826 /* PBXTargetDependency */,
+			);
+			name = "Pods-SpectaclesSwift";
+			productName = "Pods-SpectaclesSwift";
+			productReference = 94435F545B13738EB179688350507632 /* Pods_SpectaclesSwift.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0700;
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = D791635C6E9E63C909922B3C6B994017 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				EA7C8B695B953E1C8B48297B58138BEE /* Pods-SpectaclesSwift */,
+				96B27489FE6469C99883EAC744D79910 /* Pods-SpectaclesSwiftTests */,
+				B7AB6B9037AD4D21E432BB7F8F69582E /* Spectacles */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		09A67F84DF7BAC314E0AE217C6A7F394 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1F5AAF64563DC826B9257EC69DF30496 /* Pods-SpectaclesSwift-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8885BA1F1D93B8B5E110F9E9FDAEE8DD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D7307653D5696D7D3A87FDF4AB01B213 /* Spectacles-dummy.m in Sources */,
+				1BE8B896107645962EC2EEAA9BAEFAE5 /* TMAuthor.m in Sources */,
+				673D0B29922E7C467E5DECD3758441C9 /* TMLibraryVersion.m in Sources */,
+				5F28CB033A133E6C39EBBCE65FC1A3ED /* TMPodspec.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F26DA14C320392E396C7B2718D364DD1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C4740060D3964332B3A57FCE85A074E6 /* Pods-SpectaclesSwiftTests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		4659DF6B64DEFB44388077258B17A826 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Spectacles;
+			target = B7AB6B9037AD4D21E432BB7F8F69582E /* Spectacles */;
+			targetProxy = 7483EDF5BFE1B64C731E2A2CFA6C9248 /* PBXContainerItemProxy */;
+		};
+		87EC367152A8B92748310CACCC0D6D3D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Spectacles;
+			target = B7AB6B9037AD4D21E432BB7F8F69582E /* Spectacles */;
+			targetProxy = 98993DB0F179868BFC3AF15D46715515 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		0127873928CF6B31D0A960A71492CE6C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0773E9D42289D46646EBCE5B3BE6AFC2 /* Spectacles.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Spectacles/Spectacles-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Spectacles/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Spectacles/Spectacles.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = Spectacles;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		163D87BE96A63549B0EACF1CC31A2E90 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				ONLY_ACTIVE_ARCH = YES;
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		2E874F64F39081F5C61E0E2E85DA1FBA /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 04DC3BA32CF664D862682926F0B816EA /* Pods-SpectaclesSwiftTests.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-SpectaclesSwiftTests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-SpectaclesSwiftTests/Pods-SpectaclesSwiftTests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_SpectaclesSwiftTests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		3CA063C389255032767839571EB93027 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AB5F1CDC155E9797288E310079FFA649 /* Pods-SpectaclesSwift.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-SpectaclesSwift/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-SpectaclesSwift/Pods-SpectaclesSwift.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_SpectaclesSwift;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		56F5FAA2CE66D4613BBEDE750EC57E84 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = ED207D463E170AB600BBD066BE8988DE /* Pods-SpectaclesSwift.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-SpectaclesSwift/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-SpectaclesSwift/Pods-SpectaclesSwift.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_SpectaclesSwift;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		707B86CFB21B645E37109F39754D4051 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D35E5B5F35BD643D8CB50FCAC2F27277 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0773E9D42289D46646EBCE5B3BE6AFC2 /* Spectacles.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Spectacles/Spectacles-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Spectacles/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Spectacles/Spectacles.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = Spectacles;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		EEF6776452982AF0EB6CF01BE1257879 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0DED1C523F70E7E009FA7072B7E72C54 /* Pods-SpectaclesSwiftTests.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-SpectaclesSwiftTests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-SpectaclesSwiftTests/Pods-SpectaclesSwiftTests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_SpectaclesSwiftTests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		27C3C7FB4B7BEDE5E8B93E8B04572AA6 /* Build configuration list for PBXNativeTarget "Pods-SpectaclesSwiftTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EEF6776452982AF0EB6CF01BE1257879 /* Debug */,
+				2E874F64F39081F5C61E0E2E85DA1FBA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				163D87BE96A63549B0EACF1CC31A2E90 /* Debug */,
+				707B86CFB21B645E37109F39754D4051 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8E2B301D73A0E67BD95C5E84418AE778 /* Build configuration list for PBXNativeTarget "Spectacles" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0127873928CF6B31D0A960A71492CE6C /* Debug */,
+				D35E5B5F35BD643D8CB50FCAC2F27277 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FF02FCCD75FCA7252165B605726C848E /* Build configuration list for PBXNativeTarget "Pods-SpectaclesSwift" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3CA063C389255032767839571EB93027 /* Debug */,
+				56F5FAA2CE66D4613BBEDE750EC57E84 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}

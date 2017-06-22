@@ -1,0 +1,12 @@
+PODS:
+  - Spectacles (2.0.0)
+
+DEPENDENCIES:
+  - Spectacles
+
+SPEC CHECKSUMS:
+  Spectacles: 223bdead6ccacfd5e1f4c9f156ec77931e20792a
+
+PODFILE CHECKSUM: 424274a20f1212923a0f3f50d234d7e7e4225e07
+
+COCOAPODS: 1.2.1
